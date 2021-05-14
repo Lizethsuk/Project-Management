@@ -1,0 +1,184 @@
+body,
+html,
+div {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  height: 1500px;
+}
+
+.x1 {
+  /* background-image: url("/images/avatar/author.jpg"); */
+  position: absolute;
+  right: auto;
+  width: 1200px;
+  /* display: block; */
+  /* width: 400px; */
+  /* margin-right: 0px;
+  margin-left: 330px;
+  padding-top: 0px; */
+  /* flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 auto; */
+  opacity: 0;
+}
+
+.x2 {
+  /* background-image: url("/images/avatar/author-2.jpg"); */
+  position: absolute;
+  right: auto;
+  width: 1200px;
+  /* display: block; */
+  /* width: 400px; */
+  /* margin-right: 0px;
+  margin-left: 330px;
+  padding-top: 0px; */
+  /* flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 auto; */
+  
+}
+
+.x3 {
+  /* background-image: url("/images/avatar/author.jpg"); */
+  position: absolute;
+  right: auto;
+  width: 1200px;
+  /* display: block; */
+  /* width: 400px; */
+  /* margin-right: 0px;
+  margin-left: 330px;
+  padding-top: 0px; */
+  /* flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  /* flex: 0 auto; */
+}
+
+.x4 {
+  /* background-image: url("/images/book_seat_img.jpg"); */
+  position: absolute;
+  right: auto;
+  width: 1200px;
+  /* display: block; */
+  /* width: 400px; */
+  /* margin-right: 0px;
+  margin-left: 330px;
+  padding-top: 0px; */
+  /* flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 0 auto; */
+}
+
+.background {
+  /* background-size: cover;
+  height: 100%;
+  width: 100%; */
+  /* position: fixed; */
+  transition: all 1s ease;
+  opacity:1;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.the-sticky-div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0px auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  background-color: hsla(0, 0%, 100%, 0.51);
+}
+
+.section-2-sticky {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400vh;
+  margin-left: 0px;
+  justify-content: center;
+  align-items: center;
+  border-top: 60px none rgba(36, 36, 36, 0.09);
+  background-color: #fff;
+}
+
+.the-overflow-hidden-mask {
+  position: relative;
+  z-index: 200;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+/* 
+.vertical-scrollable-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400vh;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.vertical-scroll-content {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-bottom: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+.section-works {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1{
+  opacity: 0;
+}
+.section-2{
+  opacity: 0;
+}
+.section-3{
+  opacity: 0;
+}
+.section-4{
+  opacity: 0;
+}
