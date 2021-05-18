@@ -37,13 +37,7 @@
 
 /*  */
 
-.form-1{
-   padding: 25px 20px;
-   background-color: gray;
-   max-width: 450px;
-   width: 100%;
-   border-radius: 20px;
-}
+
 
 /*==========================
       header area
@@ -317,6 +311,7 @@
 ===========================*/
 .hero-area {
    padding: 0;
+   height: 100vh;
 }
 // home-6  
 .banner-6{
@@ -324,6 +319,7 @@
    background-repeat: no-repeat;
    background-size: 50vw auto;
    .banner-item{
+    
         .banner-content-wrap{
             .sub-title{
                 font-size: 18px;
@@ -397,6 +393,8 @@
             }
             
         }
+
+       
    }
    &-alt{
       padding-bottom: 50px;
@@ -456,7 +454,7 @@
 
 
    .banner-content-wrap {
-      padding: 250px 0 182px;
+      padding: 115px 0 ;
       z-index: 1;
       position: relative;
 
@@ -470,12 +468,32 @@
       }
 
       .banner-title {
-         font-size: 64px;
+         font-size: 54px;
          font-weight: 800;
          color: $white-color;
          text-transform: uppercase;
-         line-height: 74px;
+         line-height: 54px;
          margin-bottom: 50px;
+
+      }
+      .banner-sub-title {
+         font-size: 25px;
+         font-weight: 800;
+         color: $white-color;
+         text-transform: uppercase;
+         line-height: 54px;
+         margin-bottom: 20px;
+         &:after{
+            @include absolute();
+            content: '';
+            right: 0;
+            border:5px solid pink;
+            @include background-content(no-repeat, center center,contain );
+            width: 40px;
+            height: 5px;
+            top: 100px;
+            bottom: auto;
+         }
 
       }
 
@@ -781,19 +799,35 @@
 }
 // index 4
 .hero-area.content-left{
-   height: 100vh;
    .banner-item{
       margin: 0px 50px ;
       padding-top: 6rem;
       min-height: 650px;
       box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
       background-position: top center;
+
+       
+         .banner-form{
+            position: relative;
+            
+            .form-1{
+               position: absolute;
+               padding: 25px 20px;
+               background-color: gray;
+               max-width: 488px;
+               width: 100%;
+               border-radius: 20px;
+               z-index: 2;
+            top: 8rem;
+            }
+         }
+     
       .banner-content-wrap{
-         padding: 115px 0;
          .title-shap-img{
             margin-bottom: 20px;
             max-width: 70px;
          }
+        
          .banner-title{
             text-transform: initial;
             margin-bottom: 20px;
@@ -812,6 +846,9 @@
          max-width: 1350px;
          margin-left: auto;
          margin-right: auto;
+         
+        
+         
       }
    }
 }
@@ -956,44 +993,6 @@
 }
 
 
-.single-intro-text {
-
-   padding: 40px 45px 40px 40px;
-   box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.08);
-   @include border-radius(5px);
-   overflow: hidden;
-   position: relative;
-   background: $white-color;
-   z-index: 2;
-
-   i {
-      position: absolute;
-      right: -10px;
-      top: 20px;
-      font-size: 55px;
-      color: #bababa;
-   }
-
-   p {
-      margin-bottom: 0;
-   }
-
-   .count-number {
-      position: absolute;
-      right: -55px;
-      bottom: -55px;
-      width: 120px;
-      height: 120px;
-      @include border-radius(50%);
-      background: $primary-color;
-      color: $white-color;
-      display: block;
-      text-align: left;
-      font-size: 16px;
-      font-weight: 700;
-      padding: 25px 30px;
-   }
-}
 
 .intro-video {
    width: 700px;
@@ -1057,10 +1056,12 @@
    padding-top: 120px;
    padding-bottom: 0;
    .single-intro-text{
-      padding:35px 50px 40px;
+      padding:35px 0px;
       background: transparent;
       box-shadow: none;
-      @include transition();
+      &.line{
+         border-right: 1px solid gray;
+      }
       i{
          position: relative;
          left: 0;
@@ -1073,9 +1074,6 @@
       p{
          color: $white-color;
       }
-      &:hover{
-         background: $blue-bg;
-      }
    }
 }
 
@@ -1087,94 +1085,20 @@
    padding-bottom: 40px;
    position: relative;
    overflow: hidden;
+   .ts-text-efect {
+      margin: 15px 0;
+      border-top: 4px solid white;
+      border-bottom: 4px solid white;
+      padding: 30px 0px;
+      .number{
+         font-size: 50px;
+         font-weight: bold;
+      }
+   
+   }
+   
 }
 
-.ts-speaker {
-   position: relative;
-   text-align: center;
-   margin-bottom: 55px;
-
-   .speaker-img {
-      width: 255px;
-      height: 255px;
-      position: relative;
-      @include border-radius(50%);
-      overflow: hidden;
-      margin: auto auto 20px;
-
-      img {
-         width: 100%;
-         @include transform(scale(1));
-         @include transition();
-      }
-
-      &:before {
-         @include absolute();
-         width: 100%;
-         height: 100%;
-         content: '';
-         background: rgba(59, 29, 130, .5);
-         @include transition();
-         opacity: 0;
-         z-index: 1;
-      }
-   }
-
-   .view-speaker {
-      @include absolute(absolute, 0, 70%);
-      right: 0;
-      @include transform(translateY(-50%));
-      color: $white-color;
-      font-size: 22px;
-      width: 50px;
-      height: 50px;
-      margin: auto;
-      border: 2px solid #ddd;
-      @include border-radius(50%);
-      padding: 12px 0;
-      @include transition();
-      opacity: 0;
-      z-index: 2;
-   }
-
-   .ts-title {
-      margin-bottom: 5px;
-
-      a {
-         color: $title-color;
-      }
-   }
-
-   &:hover {
-      .speaker-img {
-         img {
-            @include transform(scale(1.2));
-         }
-
-         &:before {
-            opacity: 1;
-         }
-      }
-
-      .view-speaker {
-         top: 50%;
-         opacity: 1;
-      }
-
-      .ts-title {
-         a {
-            color: $primary-color;
-         }
-      }
-   }
-   // index 4
-   &.white-text{
-         .ts-title a,
-         p{
-               color: $white-color;
-         }
-   }
-}
 
 // index 2
 .speaker-classic {
@@ -1869,15 +1793,9 @@
 }
 
 .ts-pricing-box {
-   background: $white-color;
-   padding: 40px;
+   padding: 20px 5px;
    text-align: center;
    @include transition();
-
-   &:hover {
-      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.4);
-   }
-
    .ts-pricing-header {
       .ts-pricing-name {
          font-size: 20px;
@@ -1885,13 +1803,24 @@
          color: $secondary-color;
          text-transform: uppercase;
          margin-bottom: 15px;
+         &:after{
+            @include absolute();
+      content: '';
+      right: 0;
+      border:3px solid pink;
+      width: 25px;
+      height: 4px;
+      top: 52px;
+      bottom: auto;
+      margin: auto;
+         }
       }
 
       .ts-pricing-price {
-         font-size: 58px;
+         font-size: 44px;
          font-weight: 900;
          color: $secondary-color;
-         margin-bottom: 20px;
+         margin-bottom: 00px;
 
          span {
             margin-right: 10px;
@@ -1930,24 +1859,9 @@
    .pricing-btn {
       margin-bottom: 25px;
       position: relative;
-
-      &:before,
-      &:after {
-         @include absolute(absolute, -14px, 0);
-         content: '';
-         width: 25px;
-         height: 25px;
-         display: block;
-         background: #fff;
-         @include border-radius(50%);
-         bottom: 0;
-         margin: auto;
-      }
-
-      &:after {
-         @include absolute(absolute, auto, 0);
-         right: -14px;
-      }
+      line-height: 52px;
+      font-size: 14px;
+      padding: 0 16px ;
    }
 
    .vate-text {
@@ -1988,10 +1902,10 @@
    }
 
    .ts-pricing-price {
-      font-size: 48px;
+      font-size: 44px;
       font-weight: 800;
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 0px;
 
       img {
          position: absolute;
@@ -2069,7 +1983,6 @@
 .pricing-wrap{
    .pricing-item{
       .ts-pricing-box{
-         background: $blue-bg;
             .ts-pricing-name,
             .ts-pricing-price,
             .amount-progres-text,

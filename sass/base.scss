@@ -249,9 +249,10 @@ img.pull-right {
    font-weight: 700;
    color: $white-color;
    text-transform: uppercase;
-   background: #ff007a;
+   background: $primary-color;
    height: 50px;
    padding: 0 35px;
+   width: 100%;
    line-height: 50px;
    @include border-radius(3px);
    @include transition();
@@ -261,11 +262,6 @@ img.pull-right {
    &:focus{
       outline: none;
       
-   }
-   &:hover{
-      color: $white-color;
-      background: $primary-dark;
-      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
    }
    &.fill{
       background: transparent;
@@ -304,20 +300,18 @@ img.pull-right {
    font-weight: 800;
    color: $secondary-color;
    position: relative;
-   padding-bottom: 30px;
-   margin-bottom: 85px;
-   text-align: center;
+   padding-top: 30px;
+   margin-bottom: 35px;
    &:after{
       @include absolute();
       content: '';
       right: 0;
-      background-image: url(../images/shap/title.png);
+      border:6px solid pink;
       @include background-content(no-repeat, center center,contain );
       width: 70px;
       height: 10px;
-      margin: auto auto 0;
-      top: auto;
-      bottom: 0;
+      top: 0;
+      bottom: auto;
    }
    span{
       display: block;

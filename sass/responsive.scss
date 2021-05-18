@@ -30,11 +30,10 @@ tab rotate
          }
       }
    }
-
-   .hero-area.content-left .banner-item {
-      margin: 100px 20px 0;
-   }
-
+.hero-area{
+   height: auto;
+}
+   
    //speaker
    .ts-speaker .speaker-img {
       width: 205px;
@@ -110,9 +109,7 @@ tab device
       margin-bottom: 50px;
    }
 
-   .pl-0 {
-      padding-left: 15px !important;
-   }
+   
 
    // section
    .ts-speakers,
@@ -215,28 +212,7 @@ tab device
       }
    }
 
-   // index 2
-   .hero-area.centerd-item {
-      .banner-item {
-         .banner-content-wrap .banner-title {
-            font-size: 55px;
-         }
-      }
-
-      // count down
-      .countdown .counter-item {
-         width: 90px;
-         height: 90px;
-
-         i {
-            font-size: 90px;
-            top: 6px;
-            right: 0;
-            margin: auto;
-         }
-      }
-   }
-
+  
    // index 3
    /*---- main slider-----*/
    .main-slider {
@@ -254,12 +230,26 @@ tab device
    }
 
    // index 4
+   .hero-area{
+      height: auto!important;
+   }
    .hero-area.content-left .banner-item {
       margin: 0;
-      min-height: inherit;
+      
+      .banner-form{
+         position: static;
+            
+         top: 0rem;
+         z-index: auto;
+         .form-1{
+            position: static;
+            margin-bottom: 30px;
+         }
+      }
+      
 
       .banner-content-wrap {
-         padding: 170px 0;
+         padding: 110px 0 75px;
       }
    }
 
@@ -568,9 +558,7 @@ small device /mobile sm and large
       line-height: 28px;
    }
 
-   .pl-0 {
-      padding-left: 15px !important;
-   }
+  
 
    .navbar-light .navbar-toggler-icon {
       background-image: none;
@@ -692,7 +680,14 @@ small device /mobile sm and large
       min-height: 550px;
 
       .banner-content-wrap {
-         padding: 180px 0 100px;
+         padding: 80px 0 100px;
+         .banner-sub-title{
+            &:after{
+               top: 50px;
+            }
+         }
+
+
 
          p.banner-info {
             font-size: 18px;
@@ -760,32 +755,7 @@ small device /mobile sm and large
       }
    }
 
-   // index 2
-   .hero-area.centerd-item {
-      .banner-item {
-         min-height: 650px;
-
-         &:after {
-            width: 300px;
-            height: 300px;
-         }
-
-         .banner-content-wrap {
-            padding: 50px 0;
-
-            .banner-title {
-               font-size: 38px;
-               line-height: 48px;
-            }
-         }
-
-         .countdown {
-            margin-bottom: 30px;
-         }
-      }
-   }
-
-
+   
    // index 3 slider
 
    .main-slider {
@@ -836,13 +806,27 @@ small device /mobile sm and large
    }
 
    // index 4 hero area
+   .hero-area{
+      height: auto!important;
+   }
    .hero-area.content-left {
       .banner-item {
          margin: 0;
          min-height: inherit;
+         .banner-form{
+            position: static;
+               
+            top: 0rem;
+            z-index: auto;
+            .form-1{
+               position: static;
+               margin-bottom: 30px;
+            }
+         }
+   
 
          .banner-content-wrap {
-            padding-bottom: 75px;
+            padding-bottom: 45px;
          }
       }
    }
@@ -899,7 +883,7 @@ small device /mobile sm and large
    }
 
    .ts-intro.event-intro {
-      padding-top: 20px;
+      padding-top: 90px;
    }
 
    // ts-intro-outcome

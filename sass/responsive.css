@@ -19,8 +19,8 @@ tab rotate
   .hero-area.centerd-item .banner-item .banner-content-wrap {
     padding: 50px 0;
   }
-  .hero-area.content-left .banner-item {
-    margin: 100px 20px 0;
+  .hero-area {
+    height: auto;
   }
   .ts-speaker .speaker-img {
     width: 205px;
@@ -71,9 +71,6 @@ tab device
   }
   .section-title {
     margin-bottom: 50px;
-  }
-  .pl-0 {
-    padding-left: 15px !important;
   }
   .ts-speakers,
   section {
@@ -140,19 +137,6 @@ tab device
     font-size: 48px;
     line-height: 56px;
   }
-  .hero-area.centerd-item .banner-item .banner-content-wrap .banner-title {
-    font-size: 55px;
-  }
-  .hero-area.centerd-item .countdown .counter-item {
-    width: 90px;
-    height: 90px;
-  }
-  .hero-area.centerd-item .countdown .counter-item i {
-    font-size: 90px;
-    top: 6px;
-    right: 0;
-    margin: auto;
-  }
   /*---- main slider-----*/
   .main-slider .banner-item .banner-content-wrap p.banner-title {
     margin-bottom: 25px;
@@ -160,12 +144,23 @@ tab device
   .main-slider .owl-dots {
     bottom: 170px;
   }
+  .hero-area {
+    height: auto !important;
+  }
   .hero-area.content-left .banner-item {
     margin: 0;
-    min-height: inherit;
+  }
+  .hero-area.content-left .banner-item .banner-form {
+    position: static;
+    top: 0rem;
+    z-index: auto;
+  }
+  .hero-area.content-left .banner-item .banner-form .form-1 {
+    position: static;
+    margin-bottom: 30px;
   }
   .hero-area.content-left .banner-item .banner-content-wrap {
-    padding: 170px 0;
+    padding: 110px 0 75px;
   }
   .hero-speakers .banner-item .banner-content-wrap {
     padding: 160px 0 0;
@@ -364,9 +359,6 @@ small device /mobile sm and large
   h2 {
     line-height: 28px;
   }
-  .pl-0 {
-    padding-left: 15px !important;
-  }
   .navbar-light .navbar-toggler-icon {
     background-image: none;
   }
@@ -444,7 +436,10 @@ small device /mobile sm and large
     min-height: 550px;
   }
   .banner-item .banner-content-wrap {
-    padding: 180px 0 100px;
+    padding: 80px 0 100px;
+  }
+  .banner-item .banner-content-wrap .banner-sub-title:after {
+    top: 50px;
   }
   .banner-item .banner-content-wrap p.banner-info {
     font-size: 18px;
@@ -483,23 +478,6 @@ small device /mobile sm and large
     font-size: 24px;
     line-height: 1.2;
   }
-  .hero-area.centerd-item .banner-item {
-    min-height: 650px;
-  }
-  .hero-area.centerd-item .banner-item:after {
-    width: 300px;
-    height: 300px;
-  }
-  .hero-area.centerd-item .banner-item .banner-content-wrap {
-    padding: 50px 0;
-  }
-  .hero-area.centerd-item .banner-item .banner-content-wrap .banner-title {
-    font-size: 38px;
-    line-height: 48px;
-  }
-  .hero-area.centerd-item .banner-item .countdown {
-    margin-bottom: 30px;
-  }
   .main-slider .banner-item {
     min-height: 800px;
   }
@@ -528,12 +506,24 @@ small device /mobile sm and large
   .ts-count-down .countdown .counter-item:nth-of-type(2) b {
     display: none;
   }
+  .hero-area {
+    height: auto !important;
+  }
   .hero-area.content-left .banner-item {
     margin: 0;
     min-height: inherit;
   }
+  .hero-area.content-left .banner-item .banner-form {
+    position: static;
+    top: 0rem;
+    z-index: auto;
+  }
+  .hero-area.content-left .banner-item .banner-form .form-1 {
+    position: static;
+    margin-bottom: 30px;
+  }
   .hero-area.content-left .banner-item .banner-content-wrap {
-    padding-bottom: 75px;
+    padding-bottom: 45px;
   }
   .hero-speakers .banner-item .banner-content-wrap {
     padding: 160px 0 0;
@@ -567,7 +557,7 @@ small device /mobile sm and large
     padding: 30px 0;
   }
   .ts-intro.event-intro {
-    padding-top: 20px;
+    padding-top: 90px;
   }
   .ts-intro-outcome {
     padding-top: 140px;
