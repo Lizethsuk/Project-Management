@@ -1493,12 +1493,12 @@ img.pull-right {
 /*==========================
      ts speaker
 ===========================*/
-.ts-speakers {
+/* .ts-speakers {
   padding-top: 120px;
   padding-bottom: 40px;
   position: relative;
   overflow: hidden;
-}
+} */
 
 .ts-speakers .ts-text-efect {
   margin: 15px 0;
