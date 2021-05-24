@@ -347,6 +347,9 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+  .content {
+    min-height: 1000px !important;
+  }
   .dropdown-menu.show {
     display: block;
   }
@@ -354,7 +357,7 @@ small device /mobile sm and large
     margin-bottom: 50px;
   }
   .btn {
-    font-size: 14px;
+    font-size: 12px;
   }
   h2 {
     line-height: 28px;
@@ -506,6 +509,9 @@ small device /mobile sm and large
   .ts-count-down .countdown .counter-item:nth-of-type(2) b {
     display: none;
   }
+  .img-sec {
+    top: 100px;
+  }
   .hero-area {
     height: auto !important;
   }
@@ -538,25 +544,28 @@ small device /mobile sm and large
   .ts-intro {
     padding: 60px 0;
   }
-  .ts-intro .single-intro-text.mb-70 {
+  .ts-intro .single-intro .line {
+    border-right: none;
+  }
+  .ts-intro .single-intro .single-intro-text {
     margin-bottom: 40px;
   }
-  .ts-intro .intro-video {
+  .ts-intro .single-intro .intro-video {
     width: 100%;
     height: auto;
     margin: 30px 0;
     border-radius: 0;
   }
-  .intro-left-content {
+  .ts-intro .intro-left-content {
     margin-bottom: 40px;
   }
-  .ts-intro-item .col-lg-6:last-of-type .single-intro-text {
+  .ts-intro .ts-intro-item .col-lg-6:last-of-type .single-intro-text {
     margin-bottom: 0;
   }
-  section.p-60 {
+  .ts-intro section.p-60 {
     padding: 30px 0;
   }
-  .ts-intro.event-intro {
+  .ts-intro .ts-intro.event-intro {
     padding-top: 90px;
   }
   .ts-intro-outcome {
@@ -899,6 +908,24 @@ small device /mobile sm and large
   .header .navbar-nav {
     position: static;
     margin: 0px;
+  }
+  .img-efect {
+    width: 100%;
+    max-width: 290px;
+    padding-top: 320px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-efect {
+    width: 100%;
+    max-width: 290px;
+    padding-top: 350px;
+    height: auto;
+  }
+  .x1, .x2, .x3 {
+    max-width: 290px !important;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

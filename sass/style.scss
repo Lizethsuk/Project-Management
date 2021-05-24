@@ -42,6 +42,45 @@
 /*==========================
       header area
 ===========================*/
+.footer-area{
+   background-color: $gray-color;
+}
+
+.btn-2{
+   border: 1.5px solid white;
+   background: $primary-color;
+   &:hover{
+      background: $gray-color;
+      color: white;
+   }
+}
+.btn-color{
+   background: $primary-color;
+   &:hover{
+      background: $secondary-dark;
+      color: $gray-color;
+   }
+}
+.btn-3{
+   border: 2px solid $primary-color;
+   width: 330px;
+   padding: 0 25px !important;
+   font-size: 18px;
+   &:hover{
+      color: white;
+   }
+}
+.btn-wsp{
+   background: #51AE54;
+   width: 220px;
+   img{
+      width: 25px;
+   }
+   &:hover{
+      background: #008C4C;
+      color: white;
+   }
+}
 .header {
    .navbar {
       padding: 10px 0;
@@ -255,36 +294,6 @@
       }
    }
 
-   &.sticky {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: 99;
-      background: rgba(26, 24, 49, .95);
-      padding: 15px 0;
-
-      .navbar {
-         padding: 0;
-      }
-
-      &.fade_down_effect {
-         -webkit-animation-name: fadeInDown;
-         animation-name: fadeInDown;
-         -webkit-animation-duration: 1s;
-         animation-duration: 1s;
-         -webkit-animation-fill-mode: both;
-         animation-fill-mode: both;
-         -webkit-animation-delay: .1s;
-         animation-delay: .1s;
-      }
-
-      &.header-classic {
-         background: #fff;
-         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-         padding: 0;
-      }
-   }
 }
 
 .dropdown-menu.show {
@@ -311,7 +320,6 @@
 ===========================*/
 .hero-area {
    padding: 0;
-   height: 100vh;
 }
 // home-6  
 .banner-6{
@@ -487,7 +495,7 @@
             @include absolute();
             content: '';
             right: 0;
-            border:5px solid pink;
+            border:5px solid $primary-color;
             @include background-content(no-repeat, center center,contain );
             width: 40px;
             height: 5px;
@@ -801,24 +809,34 @@
 .hero-area.content-left{
    .banner-item{
       margin: 0px 50px ;
-      padding-top: 6rem;
+      padding-top: 3rem;
       min-height: 650px;
-      box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.2);
       background-position: top center;
 
        
          .banner-form{
             position: relative;
+            display: flex;
+            justify-content: right;
+            height: 100%;
             
             .form-1{
                position: absolute;
-               padding: 25px 20px;
-               background-color: gray;
-               max-width: 488px;
+               padding: 30px 25px;
+               background-color: $gray-color;
+               max-width: 428px;
                width: 100%;
                border-radius: 20px;
                z-index: 2;
             top: 8rem;
+            right: 0px;
+            .btn{
+               background-color: $primary-color;
+               &:hover{
+                  background: $secondary-dark;
+                  color: $gray-color;
+               }
+            }
             }
          }
      
@@ -840,6 +858,7 @@
       }
    }
 }
+.footer-area{}
 @media (min-width: 1400px){
    .hero-area.content-left{
       .banner-item{
@@ -983,9 +1002,6 @@
 /*==========================
       intro area
 ===========================*/
-.ts-intro {
-   padding: 80px 0 60px;
-}
 
 .intro-line {
    background-repeat: no-repeat;
@@ -1055,12 +1071,16 @@
 .ts-intro.event-intro{
    padding-top: 120px;
    padding-bottom: 0;
+   background-color: $secondary-color;
+   .row-direct{
+      border-bottom: 4px solid $primary-color;
+   }
    .single-intro-text{
       padding:35px 0px;
       background: transparent;
       box-shadow: none;
       &.line{
-         border-right: 1px solid gray;
+         border-right: 2px solid $primary-color;
       }
       i{
          position: relative;
@@ -1072,7 +1092,7 @@
       }
       .ts-title,
       p{
-         color: $white-color;
+         color: $gray-color;
       }
    }
 }
@@ -1084,17 +1104,28 @@
    padding-top: 120px;
    padding-bottom: 40px;
    position: relative;
-   overflow: hidden;
+   background-color: $primary-color;
    .ts-text-efect {
       margin: 15px 0;
       border-top: 4px solid white;
       border-bottom: 4px solid white;
       padding: 30px 0px;
+      max-width: 460px;
       .number{
-         font-size: 50px;
+         font-size: 57px;
          font-weight: bold;
+         font-family: 'GT Pressura';
+      }
+      h4{
+         color: white;
+         font-size: 27px;
       }
    
+   }
+   .section-title{
+      &:after{
+         border:6px solid white;
+      }
    }
    
 }
@@ -1389,17 +1420,6 @@
       }
    }
 }
-/* ts-schedule-white */
-.ts-schedule-white *{
-   color: #fff;
-   .schedule-listing{
-      &:hover {
-         .schedule-slot-title{
-            color: $primary-color;
-         }
-      }
-   }
-}
 
 // schedule-listing
 .schedule-listing {
@@ -1531,6 +1551,27 @@
 }
 
 // index 2
+.ts-schedule{
+   ul{
+      padding-left: 40px;
+      li{
+         line-height: 30px;
+         font-size: 22px;
+         margin-bottom: 10px;
+         
+      }
+      li::marker{
+         content: url(../images/shap/check.png);
+         margin: 0 3px;
+         color: $text-color;
+         display: flex;
+         align-items: center;
+         margin-top: 10px;
+      }
+      
+   }
+  
+}
 .ts-schedule-nav {
    text-align: center;
    margin-bottom: 90px;
@@ -1735,7 +1776,8 @@
       ts-pricing
 =====================================*/
 .ts-pricing {
-   @include background-content();
+   background-color: $gray-color;
+   padding: 120px 0px;
 
    .speaker-shap {
       .shap2 {
@@ -1807,7 +1849,7 @@
             @include absolute();
       content: '';
       right: 0;
-      border:3px solid pink;
+      border:3px solid $primary-color;
       width: 25px;
       height: 4px;
       top: 52px;
@@ -2870,7 +2912,7 @@
 
 /* ---- .grid-item ---- */
 .ts-gallery {
-   padding-bottom: 70px;
+  padding: 0px!important;
 }
 
 .grid-item img {
@@ -3089,7 +3131,7 @@
 blockquote {
    position: relative;
    text-align: center;
-   padding: 30px 60px;
+   padding: 30px 30px;
    border: 0;
    margin: 30px 0 0px;
 
@@ -3106,14 +3148,12 @@ blockquote {
 
 blockquote:before {
    padding: 28px 0 22px;
-   content: "\e937";
-   font-family: 'iconfont';
-   color: #fde5ef;
-   font-size: 60px;
+   content: '“';
+   color: $primary-color;
+   font-size: 150px;
    position: absolute;
-   left: 110px;
-   top: 0px;
-   transform: rotate(180deg);
+   left: 6px;
+   top: 27px;
 }
 
 .post-single {
@@ -3845,6 +3885,22 @@ faq-item
 
 
 /*------------back to top-------------*/
+.BackTo2 {
+   position: -webkit-sticky;
+  position: sticky;
+   cursor: pointer;
+   position: fixed;
+   text-align: center;
+   z-index: 9;
+   width: 260px;
+
+   a {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 2px;
+   }
+}
 .BackTo {
    background: $primary-color none repeat scroll 0 0;
    border-radius: 50%;

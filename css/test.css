@@ -1,14 +1,15 @@
 
-
+ /*
 .content {
-  height: 1500px;
+  min-height: 700px;
+}*/
+.content {
+  min-height: 690px;
 }
-
 .x1 {
   position: absolute;
   right: auto;
   display: block;
-  width: 400px;
   margin-right: 0px;
   
   padding-top: 0px;
@@ -23,7 +24,6 @@
   right: auto;
   opacity: 0;
   display: block;
-  width: 400px;
   margin-right: 0px;
 
   padding-top: 0px;
@@ -34,29 +34,15 @@
   
 }
 
+
 .x3 {
   position: absolute;
   right: auto;
   opacity: 0;
   display: block;
-  width: 400px;
+  
   margin-right: 0px;
 
-  padding-top: 0px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex: 0 auto;
-}
-
-.x4 {
-  position: absolute;
-  right: auto;
-  opacity: 0;
-  display: block;
-  width: 400px;
-  margin-right: 0px;
- 
   padding-top: 0px;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,7 +55,7 @@
   height: 100%;
   width: 100%; */
   /* position: fixed; */
-  transition: all 2s ease;
+  transition: all 2.4s ease;
   opacity:1;
 }
 
@@ -88,7 +74,6 @@
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: 100vh;
   margin: 0px auto;
   flex-direction: column;
   justify-content: center;
@@ -102,7 +87,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 400vh;
   margin-left: 0px;
   justify-content: center;
   align-items: center;
@@ -111,16 +95,19 @@
 .the-overflow-hidden-mask {
   position: relative;
   z-index: 200;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   height: 100%;
 }
 /* .event-intro{
   padding-bottom: 100px !important 
 } */
-
+.div-imgs-scr{
+  position: relative;
+  z-index: 200;
+}
 .vertical-scroll-content {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 /* .vertical-scrollable-div {
   display: -webkit-box;
@@ -169,8 +156,5 @@
   opacity: 0;
 }
 .section-3{
-  opacity: 0;
-}
-.section-4{
   opacity: 0;
 }

@@ -27,7 +27,43 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 /* ============================== */
 
+@font-face {
+   font-family: 'GT Pressura';
+   src: url("../fonts/GT Pressura/gt-pressura-regular-web-webfont.ttf"); 
+   src: url("../fonts/GT Pressura/gt-pressura-regular-web-webfont.ttf") format('truetype');
+   font-weight:bold;
+   font-style: normal; 
+ }
+ @font-face {
+   font-family: 'GT Pressura-light-italic' ;
+   src:  url("../fonts/GT Pressura/gt-pressura-light-italic-web-webfont.ttf");
+   src:   url("../fonts/GT Pressura/gt-pressura-light-italic-web-webfont.ttf") format('truetype');
+   font-weight:lighter;
+   font-style: italic; 
+  
+ }
+ @font-face {
+   font-family: 'GT Pressura-regular-italic';
+   src:  url("../fonts/GT Pressura/gt-pressura-regular-italic-web-webfont.ttf");  
+   src: url("../fonts/GT Pressura/gt-pressura-regular-italic-web-webfont.ttf") format('truetype');
+   font-weight:normal;
+   font-style: italic; 
+ }
+ @font-face {
+   font-family: 'GT Pressura-bold-italic';
+   src: url("../fonts/GT Pressura/gt-pressura-bold-italic-web-webfont.ttf");
+   src: url("../fonts/GT Pressura/gt-pressura-bold-italic-web-webfont.ttf") format('truetype');
+   font-weight:bold;
+   font-style: italic; 
+ }
+ @font-face {
+   font-family:'GT Pressura-bold';
+   src: url("../fonts/GT Pressura/gt-pressura-bold-web-webfont.ttf");
+   src: url("../fonts/GT Pressura/gt-pressura-bold-web-webfont.ttf") format('truetype');
+   font-weight:bold;
+   font-style: normal;
 
+ }
 
 
 
@@ -42,7 +78,6 @@ p {
     font-family: 'Roboto', sans-serif;
     line-height: 26px;
     font-size: 16px;
-    color: #888888;
 }
 
 h1,
@@ -110,7 +145,6 @@ a:visited {
 }
 a {
     color: $primary-color;
-    @include transition();
 }
 a:hover {
     text-decoration: none;
@@ -119,9 +153,6 @@ a:hover {
 a.read-more {
     color: $primary-color;
     font-weight: 700;
-}
-a.read-more:hover {
-    color: #222;
 }
 .body-color{
    background: #161362;
@@ -132,6 +163,8 @@ section,
 .section-padding {
     padding: 100px 0;
     position: relative;
+    background-color: $secondary-color;
+    color: $gray-color;
 }
 .section-bg{
    background: #f9fafc;
@@ -245,16 +278,16 @@ img.pull-right {
 
 // btn 
 .btn{
-   font-size: 16px;
+   font-size: 15px;
    font-weight: 700;
    color: $white-color;
    text-transform: uppercase;
-   background: $primary-color;
+   
    height: 50px;
-   padding: 0 35px;
+   padding: 0 20px;
    width: 100%;
-   line-height: 50px;
-   @include border-radius(3px);
+   line-height: 45px;
+   @include border-radius(50px);
    @include transition();
    outline: none;
    text-decoration: none;
@@ -281,32 +314,30 @@ img.pull-right {
 .btn-link{
    font-size: 16px;
    font-weight: 700;
-   color: $title-color;
    text-decoration: none !important;
    i{
       margin-left: 6px;
       position: relative;
       top: 2px;
    }
-   &:hover{
-      color: $primary-color;
-   }
 }
 
 // default title set
 .section-title,
 .column-title{
-   font-size: 36px;
+   font-size: 60px;
    font-weight: 800;
-   color: $secondary-color;
+   color: $gray-color;
    position: relative;
    padding-top: 30px;
    margin-bottom: 35px;
+   line-height: 60px;
+   font-family: 'GT Pressura';
    &:after{
       @include absolute();
       content: '';
       right: 0;
-      border:6px solid pink;
+      border:6px solid $primary-color;
       @include background-content(no-repeat, center center,contain );
       width: 70px;
       height: 10px;
@@ -348,7 +379,8 @@ img.pull-right {
    }
 }
 .ts-title{
-   font-size: 24px;
+   font-size: 40px;
+   font-family: 'GT Pressura';
    
 }
 
