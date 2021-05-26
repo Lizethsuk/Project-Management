@@ -32,7 +32,7 @@
 }
 
 .x3 {
-  position: absolute;
+  /* position: absolute; */
   right: auto;
   opacity: 0;
   display: block;
@@ -43,7 +43,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex: 0 auto;
-}
+} 
 
 .x4 {
   position: absolute;
@@ -64,11 +64,23 @@
   transition: all 2s ease;
   opacity:1;
 }
-
+.animation-content{
+   z-index:100;
+   position: relative;
+   padding-top: 5px;
+   margin-left: 30px;
+   padding-right: 1px;
+}
 .opacity {
   opacity: 0;
 }
+.test{
+  margin-top: -50px;
+  background-color: #474644;
+  display: block;
+}
 .the-sticky-div {
+  /* margin-top: -1500px; */
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -77,9 +89,9 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
-  height: 100vh;
+  height: 100vh;  
   margin: 0px auto;
   flex-direction: column;
   justify-content: center;
@@ -96,19 +108,23 @@
   margin-left: 0px;
   justify-content: center;
   align-items: center;
+  /* margin : 20px; */
+  margin-bottom: 300px;
+
+ 
 }
 .the-overflow-hidden-mask {
   position: relative;
   z-index: 200;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   height: 100%;
 }
 
-
+/* 
 .vertical-scroll-content {
   padding-top: 70px;
-}
+} */
 
 .section-works {
   position: relative;
@@ -222,4 +238,7 @@
   border-color: rgba(235, 218, 218, 0.5);
   padding-top: 30px;
   max-width: 510px;
+}
+.ts-princing-desktop{
+  display: none;
 }

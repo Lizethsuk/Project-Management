@@ -2,6 +2,9 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .ts-princing-desktop{
+      display: block !important;
+    }
     .banner-form{
       justify-content: center !important;
     }
@@ -71,6 +74,9 @@
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    .ts-princing-desktop{
+      display: block !important;
+    }
     .ts-intro {
       padding-top: 0px !important;
     }
@@ -352,6 +358,9 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+  .ts-princing-desktop{
+    display: block !important;
+  }
   .section-title-responsibe {
     display: block !important;
   }
