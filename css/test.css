@@ -148,7 +148,7 @@
   color: white !important;
 }
 .form-1{
-  opacity: 0.9;
+  opacity: 0.95;
 } 
 
 .form-check{
@@ -189,11 +189,6 @@
   margin-left: -10px;
 } */
 
-.btn-wsp{
-  border-radius: 12px;
-  height: 55px;
-  width: 200px;
-}
 
 .names-content{
   display: flex !important;
@@ -215,21 +210,16 @@
 .section-title-responsibe {
   display: none;
 }
-.btn-wsp {
-  margin-left: 15px;
-}
 .slider-responsive{
   padding-left: 20px;
   padding-right: 20px;
-  color:white
+  color:white;
+  bottom: -100px;
 }
 
 .item{
   border-top: 4px solid white;
   border-color: rgba(235, 218, 218, 0.5);
   padding-top: 30px;
-}
-
-.hero-area{
-  padding: 100px 0;
+  max-width: 510px;
 }

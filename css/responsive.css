@@ -112,7 +112,7 @@ tab rotate
     .hero-area.centerd-item .banner-item .banner-content-wrap {
       padding: 50px 0; }
   .hero-area.content-left .banner-item {
-    margin: 100px 20px 0; }
+    margin: 0; }
   .ts-speaker .speaker-img {
     width: 205px;
     height: 205px; }
@@ -377,14 +377,13 @@ small device /mobile sm and large
     padding-bottom: 50px !important;
   }
   .ts-schedule {
-    padding: 25px
+    padding: 25px 5px
   }
   .info{
-    margin-left: -10px;
     margin-top: 11px;
   } 
   .gallery-1{
-    padding: 5px;
+    padding: 0px;
   }
   .copyright-text p{
     font-size: 15px !important;
@@ -393,7 +392,13 @@ small device /mobile sm and large
     text-align: left !important;
     padding-top: 20px;
   }
-
+  .logo-footer img{
+    width: 130px;
+  }
+  .rnk{
+    max-width: 320px;
+    width: 100%;
+  }
   .slider-responsive h2 {
     font-size: 35px;
   }
@@ -434,9 +439,17 @@ small device /mobile sm and large
 }
 
 @media (max-width: 767px) {
+  .container-fluid{
+    padding: 0px!important
+  }
   .banner-item .banner-content-wrap .banner-sub-title:after{
-    left: 20px;
-    top: 150px;
+    left: 0px;
+    top: 60px;
+  }
+  .banner-item .banner-content-wrap .banner-sub-title{
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 23px;
   }
   /* .banner-content-wrap{
     padding-left: 25px;
@@ -447,8 +460,8 @@ small device /mobile sm and large
   .mb-100 {
     margin-bottom: 50px; }
   .btn-2 {
-    font-size: 14px; 
-    width: auto !important;
+    font-size: 12px; 
+    width: 199px !important;
   }
 
   h2 {
@@ -511,12 +524,12 @@ small device /mobile sm and large
   .banner-item {
     min-height: 550px; }
     .banner-item .banner-content-wrap {
-      padding: 180px 0 100px; }
+      padding: 85px 0 100px; }
       .banner-item .banner-content-wrap p.banner-info {
-        font-size: 18px; }
+        font-size: 18px;
+        margin-bottom: 10px!important; }
       .banner-item .banner-content-wrap h1.banner-title {
-        font-size: 28px;
-        font-size: 30px;
+        font-size: 34px;
         margin-bottom: 35px;
         line-height: 40px; }
       .banner-item .banner-content-wrap .countdown {
@@ -525,7 +538,10 @@ small device /mobile sm and large
           margin-bottom: 20px; }
       .banner-item .banner-content-wrap .banner-btn .btn {
         margin-bottom: 15px;
-        margin-right: 15px; }
+        margin-right: 15px;
+        max-width: 280px;
+        font-size: 13.7px;
+      }
         .banner-item .banner-content-wrap .banner-btn .btn.fill {
           margin-left: 0; }
   .banner-6 .banner-item .banner-content-wrap .banner-title {
@@ -574,7 +590,7 @@ small device /mobile sm and large
     margin: 0;
     min-height: inherit; }
     .hero-area.content-left .banner-item .banner-content-wrap {
-      padding-bottom: 75px; padding-left: 20px;}
+      padding-bottom: 75px; padding-left: 0px;}
   .hero-speakers .banner-item .banner-content-wrap {
     padding: 160px 0 0; }
   .hero-form-content {
@@ -599,6 +615,8 @@ small device /mobile sm and large
     padding: 30px 0; }
   .ts-intro.event-intro {
     padding-top: 20px; }
+  .line {
+      border-right: none!important; }
   .ts-intro-outcome {
     padding-top: 140px;
     padding-bottom: 40px; }
@@ -846,5 +864,37 @@ small device /mobile sm and large
   .header .navbar-nav {
     position: static;
     margin: 0px; } 
+  .btn-wsp{
+    width: 160px;
+    line-height: 50px;
+    font-size: 13px!important;
+  }  
   
+  }
+  @media (max-width: 480px){
+    .btn-2{
+      width: 140px!important;
+      font-size: 9.8px;
+      padding: 0 1px;
+      line-height: 42px;
+      height: 45px;
+    }
+    .btn-2 img{
+      width: 13px!important;
+    }
+    .c-asesora p{
+      font-size: 15.5px;
+      padding-bottom: 0px;
+      line-height: 21px;
+    }
+    .c-asesora a{
+      font-size: 15.5px;
+    }
+    .ts-schedule ul{
+      padding-left: 22px;
+    }
+    .list li {
+      font-size: 15px!important;
+      line-height: 22px!important;
+    }
   }
