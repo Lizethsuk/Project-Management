@@ -70,36 +70,7 @@
       padding: 100px 0;
     }
 }
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .ts-princing-desktop{
-      display: block !important;
-    }
-    .ts-intro {
-      padding-top: 0px !important;
-    }
-    .hero-area{
-      padding: 100px 0;
-    }
-    .slider-responsive{
-      display: block !important;
-    }
-    .number{
-      font-size: 50px;
-      padding-top: 10px;
-    }
-    .img-responive{
-      width: 200px; /* width of container */
-      height: 300px; /* height of container */
-      object-fit: cover;
-      object-position: 10% 50%; /* try 20px 10px */ 
-    }
-    .section-2-sticky {
-      display: none !important;
-    }
-}
+
 
 /*==========================
 tab rotate 
@@ -359,6 +330,7 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+
   .ts-schedule{
     padding-left: 15px !important;
   }
@@ -367,6 +339,7 @@ small device /mobile sm and large
   }
   .ts-princing-desktop{
     display: block !important;
+    padding: 30px !important;
   }
   .section-title-responsibe {
     display: block !important;
