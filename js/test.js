@@ -29,7 +29,7 @@ $(window).scroll(function () {
     $(".x1").removeClass("section-1");
   
   } else {
-    $(".x1").addClass("section-1");
+    // $(".x1").addClass("section-1");
    
   }
   if ($(window).scrollTop() > 2400) {
@@ -39,30 +39,40 @@ $(window).scroll(function () {
     $(".x2").addClass("section-2");
    
   }
-  if ($(window).scrollTop() > 3000) {
+  if ($(window).scrollTop() > 2800) {
     $(".x3").removeClass("section-3");
     $(".x2").addClass("section-2");
   } else {
     $(".x3").addClass("section-3");
    
   }
-
+  if ($(window).scrollTop() > 3200) {
+    $(".x4").removeClass("section-4");
+    $(".x3").addClass("section-3");
+  } else {
+    $(".x4").addClass("section-4");
+   
+  }
 
 });
 
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
-  navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+  responsiveClass:true,
   responsive:{
       0:{
-          items:1
+          items:1,
+          nav:true
       },
       600:{
-          items:1
+          items:3,
+          nav:false
       },
       1000:{
-          items:1
+          items:5,
+          nav:true,
+          loop:false
       }
   }
 })
