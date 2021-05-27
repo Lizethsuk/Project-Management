@@ -151,6 +151,7 @@ tab rotate
 tab device 
 ===========================*/
 @media (min-width: 768px) and (max-width: 991px) {
+
   .dropdown-menu.show {
     display: block; }
   .section-title {
@@ -358,6 +359,12 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+  .ts-schedule{
+    padding-left: 15px !important;
+  }
+  .modalidades{
+    padding-left: 15px !important;
+  }
   .ts-princing-desktop{
     display: block !important;
   }
@@ -432,13 +439,18 @@ small device /mobile sm and large
     padding: 5px
   }
   .owl-nav{
+    position: relative;
     padding-top: 5px;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
   }
   .owl-prev{
     padding-right: 10px;
+    margin-top: -300px !important;
+  }
+  .owl-next{
+    margin-top: -300px !important;
   }
   /* .image-content{
     height: 30px;
