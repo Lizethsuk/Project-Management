@@ -75,11 +75,31 @@
 /*==========================
 tab rotate 
 ===========================*/
-@media (min-width: 1501px) and (max-width: 1700px){
 
+
+@media (min-height: 600px) {
   .section-2-sticky {
 
     /* margin : 20px; */
+    margin-bottom: 280px!important;
+  
+   
+  }
+}
+@media (min-height: 800px) {
+  .section-2-sticky {
+
+    /* margin : 20px; */
+    margin-bottom: 100px!important;
+  
+   
+  }
+}
+
+/* @media (min-width: 1501px) and (max-width: 1700px){
+
+  .section-2-sticky {
+
     margin-bottom: 280px!important;
   
    
@@ -89,12 +109,11 @@ tab rotate
 
   .section-2-sticky {
 
-    /* margin : 20px; */
     margin-bottom: 300px!important;
   
    
   }
-}
+} */
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .section-2-sticky {
