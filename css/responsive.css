@@ -75,12 +75,22 @@
 /*==========================
 tab rotate 
 ===========================*/
+@media (min-width: 1501px) and (max-width: 1700px){
+
+  .section-2-sticky {
+
+    /* margin : 20px; */
+    margin-bottom: 280px!important;
+  
+   
+  }
+}
 @media (min-width: 1201px) and (max-width: 1500px){
 
   .section-2-sticky {
 
     /* margin : 20px; */
-    margin-bottom: 180px!important;
+    margin-bottom: 300px!important;
   
    
   }
