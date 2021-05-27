@@ -75,7 +75,25 @@
 /*==========================
 tab rotate 
 ===========================*/
+@media (min-width: 1201px) and (max-width: 1500px){
+
+  .section-2-sticky {
+
+    /* margin : 20px; */
+    margin-bottom: 180px!important;
+  
+   
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
+  .section-2-sticky {
+
+    /* margin : 20px; */
+    margin-bottom: 160px!important;
+  
+   
+  }
   .header ul.navbar-nav > li > a {
     padding: 0 10px;
     font-size: 13px; }
@@ -247,7 +265,7 @@ tab device
   .ts-pricing-item {
     margin-top: 85px; }
   .ts-pricing {
-    padding-bottom: 20px; }
+    padding-bottom: 20px!important; }
   .pricing-item,
   .location-form {
     margin-bottom: 50px; }
