@@ -89,14 +89,26 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Rockwell';
+  src: url("../fonts/rockwell/Rockwell.ttc");
+  src: url("../fonts/rockwell/Rockwell.ttc") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cera-medium';
+  src: url("../fonts/cera/Cera-Medium.ttf");
+  src: url("../fonts/cera/Cera-Medium.ttf") format("truetype");
+}
 
 /* Typography
 ================================================== */
 body,
 p {
-  font-family: 'Roboto', sans-serif;
-  line-height: 26px;
-  font-size: 16px;
+  font-family: 'Raleway';
+  line-height: 28px;
+  font-size: 17px;
 }
 
 h1,
@@ -191,7 +203,7 @@ a.read-more {
 
 section,
 .section-padding {
-  padding: 100px 0;
+  padding: 140px 0;
   position: relative;
   background-color: #F0EADF;
   color: #474644;
@@ -232,7 +244,9 @@ section,
   clear: both;
   height: 20px;
 }
-
+.col-xl-4{
+  max-width: 590px!important;
+}
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -335,7 +349,7 @@ img.pull-right {
 }
 
 .btn {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -353,6 +367,11 @@ img.pull-right {
   outline: none;
   text-decoration: none;
   cursor: pointer;
+  font-family: 'GT Pressura-bold';
+  letter-spacing: 0.05em;
+}
+.gallery-1{
+  width: 100%;
 }
 
 .btn:focus {
@@ -396,8 +415,7 @@ img.pull-right {
 
 .section-title,
 .column-title {
-  font-size: 60px;
-  font-weight: 800;
+  font-size: 50px;
   color: #474644;
   position: relative;
   padding-top: 30px;
@@ -413,69 +431,75 @@ img.pull-right {
   top: 0;
   content: '';
   right: 0;
-  border: 6px solid #9A752B;
+  background-color: #9A752B;
+  border: 2.6px solid #9A752B;
   background-repeat: no-repeat;
   background-size: center center;
   background-position: contain;
   width: 70px;
-  height: 10px;
+  height: 4.7px;
   top: 0;
   bottom: auto;
 }
 [data-tooltip-second]:hover:before, [data-tooltip]:hover:after {
   display: block;
   position: absolute;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #4C4C4C;
+  font-weight: bold;
 }
 [data-tooltip-second]:hover:before {
   border-radius: 0.2em;
   content: attr(title);
   background-color:#E1D5BF;
-  margin-top: -7.8em;
-  padding: 0.3em;
-  margin-left: 223px;
-  max-width: 124px;
+  margin-top: -4.5em;
+  padding: 0.2em;
+  margin-left: 18px;
+  max-width: 160px;
   line-height: 14px;
   text-align: center;
+  font-size: 0.6em;
 }
 [data-tooltip-second]:hover:after {
   content: '';
-  margin-top: -58px;
-  margin-left: 130px;
+  font-size: 0.6em;
+  margin-top: -98px;
+  margin-left: 110px;
   border-style: solid;
   border-color: transparent;
   border-top-color: #E1D5BF;
-  border-width: 0.5em 0.5em 0 0.5em;
-  padding-top: 20px;
+  border-width: 1em 0.5em 0 0.5em;
+  padding-top: 25px;
   margin-left: -15px;
   
 }
 [data-tooltip]:hover:before, [data-tooltip]:hover:after {
   display: block;
   position: absolute;
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: #4C4C4C;
+  font-weight: bold;
 }
 [data-tooltip]:hover:before {
   border-radius: 0.2em;
   content: attr(title);
   background-color:#E1D5BF;
-  margin-top: -3em;
-  padding: 0.3em;
-  margin-left: 130px;
-  max-width: 124px;
+  margin-top: -3.3em;
+  padding: 0.2em;
+  margin-left: 100px;
+  max-width: 135px;
+  width: 100%;
   line-height: 14px;
   text-align: center;
 }
 [data-tooltip]:hover:after {
   content: '';
-  margin-top: -58px;
-  margin-left: 130px;
+  margin-top: -60px;
+  margin-left: 137px;
   border-style: solid;
   border-color: transparent;
   border-top-color: #E1D5BF;
-  border-width: 0.5em 0.5em 0 0.5em;
+  border-width: 1em 0.5em 0 0.5em;
   
   
 }
@@ -614,6 +638,14 @@ img.pull-right {
 .btn-2 {
   border: 1.5px solid white;
   background: #9A752B;
+  font-family: 'GT Pressura';
+  padding: 0 13px!important;
+  text-align: left;
+  font-size: 22px;
+  max-width: 280px;
+  width: 100%!important;
+  line-height: 42px;
+  letter-spacing: 0.05em;
 }
 
 .btn-2:hover {
@@ -623,6 +655,10 @@ img.pull-right {
 
 .btn-color {
   background: #9A752B;
+  max-width: 334px;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
 }
 
 .btn-color:hover {
@@ -632,9 +668,19 @@ img.pull-right {
 
 .btn-3 {
   border: 2px solid #9A752B;
-  width: 330px;
+  max-width: 380px;
   padding: 0 25px !important;
-  font-size: 18px;
+  font-size: 21.99px;
+  font-family: 'GT Pressura';
+  line-height: 46px!important;
+}
+
+.btn-3 strong {
+  font-size: 26.24px;
+  font-family: 'GT Pressura-bold';
+}
+.btn-3 span {
+  font-size: 35.18px;
 }
 
 .btn-3:hover {
@@ -645,24 +691,26 @@ img.pull-right {
   width: 100%;
 }
 .c-asesora p {
-  font-size: 22px;
+  font-size: 21.53px;
   padding-bottom: 7px;
   font-weight: bold;
+  line-height: 19px;
 
 }
 .c-asesora a {
-  font-size: 22px;
+  font-size: 21.53px;
   font-weight: bold;
 }
 .btn-wsp {
   background: #51AE54;
-  width: 200px;
-  line-height: 50px;
+  width: 240px;
+  line-height: 65px;
   border-radius: 12px;
-  height: 51px;
+  height: 65px;
   text-transform: inherit;
-  font-size: 19px!important;
+  font-size: 23.8px!important;
   margin-top: 10px;
+  font-family: 'Cera-medium';
 }
 
 .btn-wsp img {
@@ -1029,7 +1077,7 @@ img.pull-right {
 }
 
 .banner-item .banner-content-wrap {
-  padding: 115px 0;
+  padding: 155px 0 74px;
   z-index: 1;
   position: relative;
 }
@@ -1043,21 +1091,22 @@ img.pull-right {
 }
 
 .banner-item .banner-content-wrap .banner-title {
-  font-size: 54px;
-  font-weight: 800;
+  font-size: 62.7px;
+  font-weight: bold;
   color: #fff;
   text-transform: uppercase;
-  line-height: 54px;
+  line-height: 61.5px;
   margin-bottom: 50px;
 }
 
 .banner-item .banner-content-wrap .banner-sub-title {
-  font-size: 25px;
+  font-size: 34px;
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
-  line-height: 54px;
-  margin-bottom: 20px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  font-family: 'GT Pressura-bold';
 }
 
 .banner-item .banner-content-wrap .banner-sub-title:after {
@@ -1066,13 +1115,13 @@ img.pull-right {
   top: 0;
   content: '';
   right: 0;
-  border: 5px solid #9A752B;
+  border: 3px solid #9A752B;
   background-repeat: no-repeat;
   background-size: center center;
   background-position: contain;
   width: 40px;
-  height: 5px;
-  top: 100px;
+  height: 2.5px;
+  top: 140px;
   bottom: auto;
 }
 
@@ -1361,13 +1410,13 @@ img.pull-right {
 
 .hero-area.content-left .banner-item .banner-form .form-1 {
   position: absolute;
-  padding: 30px 25px;
+  padding: 50px 25px;
   background-color: #474644;
-  max-width: 428px;
+  max-width: 416px;
   width: 100%;
   border-radius: 20px;
   z-index: 2;
-  top: 8rem;
+  top: 11.8rem;
   right: 0px;
 }
 
@@ -1391,9 +1440,9 @@ img.pull-right {
 }
 
 .hero-area.content-left .banner-item .banner-content-wrap .banner-info {
-  margin-bottom: 35px;
-  font-style: italic;
-  font-size: 20px;
+  margin-bottom: 64px;
+  font-size: 24px;
+  font-family: 'GT Pressura';
 }
 
 @media (min-width: 1400px) {
@@ -1508,7 +1557,13 @@ img.pull-right {
   height: 100%;
   overflow: hidden;
 }
-
+.c-tooltip{
+  max-width: 480px;
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 73px;
+  font-family: 'Raleway';
+}
 .photo {
   position: absolute;
   top: 0;
@@ -1644,14 +1699,15 @@ img.pull-right {
 
 .ts-speakers .ts-text-efect {
   margin: 15px 0;
-  border-top: 4px solid white;
-  border-bottom: 4px solid white;
-  padding: 30px 0px;
-  max-width: 460px;
+  border-top: 5px solid #B39664;
+  border-bottom: 5px solid  #B39664;
+  padding: 45px 0px;
+  max-width: 520px;
 }
 
 .ts-speakers .ts-text-efect .number {
-  font-size: 57px;
+  font-size: 83px;
+  line-height: 100px;
   font-weight: bold;
   font-family: 'GT Pressura';
 }
@@ -1662,7 +1718,8 @@ img.pull-right {
 }
 
 .ts-speakers .section-title:after {
-  border: 6px solid white;
+  border: 2.5px solid white;
+  background-color: #FFFFFF;
 }
 
 .speaker-classic {
@@ -2082,6 +2139,7 @@ img.pull-right {
   font-size: 22px;
   margin-bottom: 10px;
   padding-left: 6px;
+  font-weight: bold;
 }
 
 .ts-schedule ul li::marker {
@@ -2370,11 +2428,12 @@ img.pull-right {
 }
 
 .ts-pricing-box .ts-pricing-header .ts-pricing-name {
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 27.8px;
+  font-family: 'GT Pressura';
+  letter-spacing: 0.04em;
   color: #F0EADF;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
 }
 
 .ts-pricing-box .ts-pricing-header .ts-pricing-name:after {
@@ -2383,19 +2442,26 @@ img.pull-right {
   top: 0;
   content: '';
   right: 0;
-  border: 3px solid #9A752B;
-  width: 25px;
-  height: 4px;
-  top: 52px;
+  background-color: #9A752B;
+  border: 2px solid #9A752B;
+  width: 50px;
+  height: 2px;
+  top: 60px;
   bottom: auto;
   margin: auto;
 }
 
 .ts-pricing-box .ts-pricing-header .ts-pricing-price {
-  font-size: 44px;
+  font-size: 55.65px;
   font-weight: 900;
+  font-family: 'GT Pressura-bold';
   color: #F0EADF;
-  margin-bottom: 00px;
+  line-height: 55px;
+  margin-bottom: 0px;
+}
+.amount-progres-text{
+  font-size: 27px;
+  line-height: 33.5px;
 }
 
 .ts-pricing-box .ts-pricing-header .ts-pricing-price span {
@@ -3194,7 +3260,9 @@ img.pull-right {
 }
 
 .ts-footer.ts-footer-item .copyright-text p {
-  color: #fff;
+  color: #FFFFFF;
+  font-size: 18.35px;
+  line-height: 30.57px;
 }
 
 /*==================================
@@ -3575,30 +3643,61 @@ img.pull-right {
 
 blockquote {
   position: relative;
-  text-align: center;
-  padding: 30px 30px;
+  text-align: left;
+  padding: 30px 20px 0px 44px;
   border: 0;
-  margin: 30px 0 0px;
 }
 
 blockquote p {
-  font-size: 18px;
+  font-size: 17px;
   color: #222222;
   line-height: 28px;
   position: relative;
   z-index: 1;
-  font-style: italic;
+  font-weight: 500;
+  font-family: 'Raleway';
+}
+blockquote h1 {
+  font-size: 36.6px;
+  line-height: 45.7px;
+  position: relative;
   font-weight: 600;
+  font-family: 'Raleway';
+}
+blockquote h4 {
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Raleway';
+}
+blockquote h5 {
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  font-weight: normal;
+  font-family: 'Raleway';
 }
 
 blockquote:before {
   padding: 28px 0 22px;
-  content: '“';
-  color: #9A752B;
-  font-size: 150px;
+  content:'“';
+  font-family: 'Rockwell';
+  color: #E1D4BF;
+  font-size: 216px;
   position: absolute;
-  left: 6px;
-  top: 27px;
+  left: -50px;
+  top: 72px;
+}
+blockquote:after {
+  padding: 28px 0 22px;
+  content:'”';
+  font-family: 'Rockwell';
+  color: #E1D4BF;
+  font-size: 119px;
+  position: absolute;
+  right: -32px;
+  bottom: 3px;
 }
 
 .post-single {
@@ -4286,7 +4385,6 @@ faq-item
   position: sticky;
   cursor: pointer;
   position: fixed;
-  text-align: center;
   z-index: 9;
   width: 260px;
 }
