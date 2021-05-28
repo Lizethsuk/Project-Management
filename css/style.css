@@ -2141,6 +2141,19 @@ img.pull-right {
   padding-left: 6px;
   font-weight: bold;
 }
+.ts-schedule .contain-check{
+  line-height: 30px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  padding-left: 6px;
+  font-weight: bold;
+}
+.ts-schedule .contain-check .row{
+  margin-bottom: 14px;
+}
+.col-check{
+  max-width: 35px;
+}
 
 .ts-schedule ul li::marker {
   content: url(../images/shap/check.png);

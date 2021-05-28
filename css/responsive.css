@@ -443,6 +443,10 @@ tab device
     display:block;
 margin:auto;
   }
+  .ts-schedule .contain-check{
+    font-size: 18px;
+    line-height: 23px;
+  }
 
   }
 
@@ -481,7 +485,7 @@ margin:auto;
   }
   .ts-princing-desktop{
     display: block !important;
-    padding: 30px !important;
+    padding: 75px 30px !important;
   }
   .section-title-responsibe {
     display: block !important;
@@ -1072,6 +1076,7 @@ margin:auto;
     }
     .item{
       padding: 30px 10px;
+      margin: 0px 10px;
     }
     .text-form{
       font-size: 20px!important;
@@ -1079,9 +1084,43 @@ margin:auto;
     .hero-area.content-left .banner-item .banner-form .form-1 .btn{
       font-size: 16.83px;
     }
-   
+    .ts-pricing-box .ts-pricing-header .ts-pricing-price{
+      font-size: 42.5px;
+    }
+    .amount-progres-text{
+      font-size: 21.5px;
+      line-height: 25px;
+    }
+    .ts-pricing-box .ts-pricing-header .ts-pricing-name{
+      font-size: 21.23px;
+      margin-bottom: 30px;
+    }
+    .ts-schedule .contain-check{
+      font-size: 17.7px;
+      line-height: 20px;
+    }
+    .col-check{
+      max-width: 28px;
+    }
+    .col-check img{ 
+      width: 23px;
+    }
   }
   @media (max-width: 325px){
+    .btn-wsp{
+      width: 175px;
+      font-size: 17px!important;
+    }
+    .ts-schedule .contain-check{
+      font-size: 13.9px;
+      line-height: 16.5px;
+    }
+    .col-check{
+      max-width: 22px;
+    }
+    .col-check img{ 
+      width: 17px;
+    }
     [data-tooltip]:hover:after {
       content: '';
       margin-top: -50px;
